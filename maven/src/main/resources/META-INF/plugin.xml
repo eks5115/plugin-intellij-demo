@@ -1,0 +1,40 @@
+<idea-plugin>
+  <id>com.x_rotor.plugin.intellij</id>
+  <name>demo</name>
+  <version>1.0</version>
+  <vendor email="eks5115@139.com" url="http://plugin.intellij.x-rotor.com">demo</vendor>
+
+  <description>This is a demo for IntelliJ Plugin</description>
+
+  <change-notes></change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <group id="hello.Menu" text="_Hello Menu" description="Hello Menu">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+      <action id="com.x_rotor.plugin.intellij.HelloAction" class="com.x_rotor.plugin.intellij.HelloAction"
+              text="_Hello Item" description="Hello"/>
+    </group>
+  </actions>
+
+</idea-plugin>
